@@ -1,6 +1,6 @@
 package am.ik.gh.webhooks.membership;
 
-@javax.annotation.Generated(value = "am.ik.gh.webhooks.PayloadGenerator", date = "2015-12-09T03:30:22.038")
+@javax.annotation.Generated(value = "am.ik.gh.webhooks.PayloadGenerator", date = "2015-12-09T11:00:58.889")
 @org.springframework.web.bind.annotation.RestController
 public class MembershipWebhook {
     private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(MembershipWebhook.class);

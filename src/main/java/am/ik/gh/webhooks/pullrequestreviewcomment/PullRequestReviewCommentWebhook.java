@@ -1,6 +1,6 @@
 package am.ik.gh.webhooks.pullrequestreviewcomment;
 
-@javax.annotation.Generated(value = "am.ik.gh.webhooks.PayloadGenerator", date = "2015-12-09T03:30:22.064")
+@javax.annotation.Generated(value = "am.ik.gh.webhooks.PayloadGenerator", date = "2015-12-09T11:00:58.967")
 @org.springframework.web.bind.annotation.RestController
 public class PullRequestReviewCommentWebhook {
     private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(PullRequestReviewCommentWebhook.class);

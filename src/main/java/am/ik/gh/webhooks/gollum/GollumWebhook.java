@@ -1,6 +1,6 @@
 package am.ik.gh.webhooks.gollum;
 
-@javax.annotation.Generated(value = "am.ik.gh.webhooks.PayloadGenerator", date = "2015-12-09T03:30:21.996")
+@javax.annotation.Generated(value = "am.ik.gh.webhooks.PayloadGenerator", date = "2015-12-09T11:00:58.86")
 @org.springframework.web.bind.annotation.RestController
 public class GollumWebhook {
     private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(GollumWebhook.class);

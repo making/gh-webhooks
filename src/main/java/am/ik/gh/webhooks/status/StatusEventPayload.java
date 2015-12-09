@@ -1,576 +1,402 @@
 package am.ik.gh.webhooks.status;
 
-@javax.annotation.Generated(value = "am.ik.gh.webhooks.PayloadGenerator", date = "2015-12-09T03:30:22.094")
+@javax.annotation.Generated(value = "am.ik.gh.webhooks.PayloadGenerator", date = "2015-12-09T11:00:59")
 @lombok.Data
 public class StatusEventPayload {
     @com.fasterxml.jackson.annotation.JsonProperty("id")
-    @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
     private Long id;
     @com.fasterxml.jackson.annotation.JsonProperty("sha")
-    @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
     private String sha;
     @com.fasterxml.jackson.annotation.JsonProperty("name")
-    @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
     private String name;
     @com.fasterxml.jackson.annotation.JsonProperty("target_url")
-    @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
     private String targetUrl;
     @com.fasterxml.jackson.annotation.JsonProperty("context")
-    @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
     private String context;
     @com.fasterxml.jackson.annotation.JsonProperty("description")
-    @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
     private String description;
     @com.fasterxml.jackson.annotation.JsonProperty("state")
-    @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
     private String state;
     @com.fasterxml.jackson.annotation.JsonProperty("commit")
-    @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
-    private StatusEventPayloadCommit commit;
+    private Commit commit;
     @com.fasterxml.jackson.annotation.JsonProperty("branches")
-    @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
-    private java.util.List<StatusEventPayloadBranche> branches;
+    private java.util.List<Branche> branches;
     @com.fasterxml.jackson.annotation.JsonProperty("created_at")
-    @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
     private String createdAt;
     @com.fasterxml.jackson.annotation.JsonProperty("updated_at")
-    @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
     private String updatedAt;
     @com.fasterxml.jackson.annotation.JsonProperty("repository")
-    @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
-    private StatusEventPayloadRepository repository;
+    private Repository repository;
     @com.fasterxml.jackson.annotation.JsonProperty("sender")
-    @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
-    private StatusEventPayloadSender sender;
+    private Sender sender;
 
     @lombok.Data
-    public static class StatusEventPayloadCommit {
+    public static class Commit {
         @com.fasterxml.jackson.annotation.JsonProperty("sha")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String sha;
         @com.fasterxml.jackson.annotation.JsonProperty("commit")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
-        private StatusEventPayloadCommitCommit commit;
+        private CommitCommit commit;
         @com.fasterxml.jackson.annotation.JsonProperty("url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String url;
         @com.fasterxml.jackson.annotation.JsonProperty("html_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String htmlUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("comments_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String commentsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("author")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
-        private StatusEventPayloadCommitAuthor author;
+        private CommitAuthor author;
         @com.fasterxml.jackson.annotation.JsonProperty("committer")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
-        private StatusEventPayloadCommitCommitter committer;
+        private CommitCommitter committer;
         @com.fasterxml.jackson.annotation.JsonProperty("parents")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private java.util.List<String> parents;
     }
 
     @lombok.Data
-    public static class StatusEventPayloadCommitCommit {
+    public static class CommitCommit {
         @com.fasterxml.jackson.annotation.JsonProperty("author")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
-        private StatusEventPayloadCommitCommitAuthor author;
+        private CommitCommitAuthor author;
         @com.fasterxml.jackson.annotation.JsonProperty("committer")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
-        private StatusEventPayloadCommitCommitCommitter committer;
+        private CommitCommitCommitter committer;
         @com.fasterxml.jackson.annotation.JsonProperty("message")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String message;
         @com.fasterxml.jackson.annotation.JsonProperty("tree")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
-        private StatusEventPayloadCommitCommitTree tree;
+        private CommitCommitTree tree;
         @com.fasterxml.jackson.annotation.JsonProperty("url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String url;
         @com.fasterxml.jackson.annotation.JsonProperty("comment_count")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Long commentCount;
     }
 
     @lombok.Data
-    public static class StatusEventPayloadCommitCommitAuthor {
+    public static class CommitCommitAuthor {
         @com.fasterxml.jackson.annotation.JsonProperty("name")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String name;
         @com.fasterxml.jackson.annotation.JsonProperty("email")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String email;
         @com.fasterxml.jackson.annotation.JsonProperty("date")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String date;
     }
 
     @lombok.Data
-    public static class StatusEventPayloadCommitCommitCommitter {
+    public static class CommitCommitCommitter {
         @com.fasterxml.jackson.annotation.JsonProperty("name")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String name;
         @com.fasterxml.jackson.annotation.JsonProperty("email")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String email;
         @com.fasterxml.jackson.annotation.JsonProperty("date")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String date;
     }
 
     @lombok.Data
-    public static class StatusEventPayloadCommitCommitTree {
+    public static class CommitCommitTree {
         @com.fasterxml.jackson.annotation.JsonProperty("sha")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String sha;
         @com.fasterxml.jackson.annotation.JsonProperty("url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String url;
     }
 
     @lombok.Data
-    public static class StatusEventPayloadCommitAuthor {
+    public static class CommitAuthor {
         @com.fasterxml.jackson.annotation.JsonProperty("login")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String login;
         @com.fasterxml.jackson.annotation.JsonProperty("id")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Long id;
         @com.fasterxml.jackson.annotation.JsonProperty("avatar_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String avatarUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("gravatar_id")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String gravatarId;
         @com.fasterxml.jackson.annotation.JsonProperty("url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String url;
         @com.fasterxml.jackson.annotation.JsonProperty("html_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String htmlUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("followers_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String followersUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("following_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String followingUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("gists_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String gistsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("starred_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String starredUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("subscriptions_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String subscriptionsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("organizations_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String organizationsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("repos_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String reposUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("events_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String eventsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("received_events_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String receivedEventsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("type")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String type;
         @com.fasterxml.jackson.annotation.JsonProperty("site_admin")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Boolean siteAdmin;
     }
 
     @lombok.Data
-    public static class StatusEventPayloadCommitCommitter {
+    public static class CommitCommitter {
         @com.fasterxml.jackson.annotation.JsonProperty("login")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String login;
         @com.fasterxml.jackson.annotation.JsonProperty("id")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Long id;
         @com.fasterxml.jackson.annotation.JsonProperty("avatar_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String avatarUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("gravatar_id")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String gravatarId;
         @com.fasterxml.jackson.annotation.JsonProperty("url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String url;
         @com.fasterxml.jackson.annotation.JsonProperty("html_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String htmlUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("followers_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String followersUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("following_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String followingUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("gists_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String gistsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("starred_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String starredUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("subscriptions_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String subscriptionsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("organizations_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String organizationsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("repos_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String reposUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("events_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String eventsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("received_events_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String receivedEventsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("type")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String type;
         @com.fasterxml.jackson.annotation.JsonProperty("site_admin")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Boolean siteAdmin;
     }
 
     @lombok.Data
-    public static class StatusEventPayloadBranche {
+    public static class Branche {
         @com.fasterxml.jackson.annotation.JsonProperty("name")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String name;
         @com.fasterxml.jackson.annotation.JsonProperty("commit")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
-        private StatusEventPayloadBrancheCommit commit;
+        private BrancheCommit commit;
     }
 
     @lombok.Data
-    public static class StatusEventPayloadBrancheCommit {
+    public static class BrancheCommit {
         @com.fasterxml.jackson.annotation.JsonProperty("sha")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String sha;
         @com.fasterxml.jackson.annotation.JsonProperty("url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String url;
     }
 
     @lombok.Data
-    public static class StatusEventPayloadRepository {
+    public static class Repository {
         @com.fasterxml.jackson.annotation.JsonProperty("id")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Long id;
         @com.fasterxml.jackson.annotation.JsonProperty("name")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String name;
         @com.fasterxml.jackson.annotation.JsonProperty("full_name")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String fullName;
         @com.fasterxml.jackson.annotation.JsonProperty("owner")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
-        private StatusEventPayloadRepositoryOwner owner;
+        private RepositoryOwner owner;
         @com.fasterxml.jackson.annotation.JsonProperty("private")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Boolean _private;
         @com.fasterxml.jackson.annotation.JsonProperty("html_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String htmlUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("description")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String description;
         @com.fasterxml.jackson.annotation.JsonProperty("fork")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Boolean fork;
         @com.fasterxml.jackson.annotation.JsonProperty("url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String url;
         @com.fasterxml.jackson.annotation.JsonProperty("forks_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String forksUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("keys_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String keysUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("collaborators_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String collaboratorsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("teams_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String teamsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("hooks_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String hooksUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("issue_events_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String issueEventsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("events_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String eventsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("assignees_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String assigneesUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("branches_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String branchesUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("tags_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String tagsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("blobs_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String blobsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("git_tags_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String gitTagsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("git_refs_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String gitRefsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("trees_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String treesUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("statuses_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String statusesUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("languages_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String languagesUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("stargazers_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String stargazersUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("contributors_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String contributorsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("subscribers_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String subscribersUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("subscription_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String subscriptionUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("commits_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String commitsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("git_commits_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String gitCommitsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("comments_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String commentsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("issue_comment_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String issueCommentUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("contents_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String contentsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("compare_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String compareUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("merges_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String mergesUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("archive_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String archiveUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("downloads_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String downloadsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("issues_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String issuesUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("pulls_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String pullsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("milestones_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String milestonesUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("notifications_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String notificationsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("labels_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String labelsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("releases_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String releasesUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("created_at")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String createdAt;
         @com.fasterxml.jackson.annotation.JsonProperty("updated_at")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String updatedAt;
         @com.fasterxml.jackson.annotation.JsonProperty("pushed_at")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String pushedAt;
         @com.fasterxml.jackson.annotation.JsonProperty("git_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String gitUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("ssh_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String sshUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("clone_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String cloneUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("svn_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String svnUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("homepage")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String homepage;
         @com.fasterxml.jackson.annotation.JsonProperty("size")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Long size;
         @com.fasterxml.jackson.annotation.JsonProperty("stargazers_count")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Long stargazersCount;
         @com.fasterxml.jackson.annotation.JsonProperty("watchers_count")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Long watchersCount;
         @com.fasterxml.jackson.annotation.JsonProperty("language")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String language;
         @com.fasterxml.jackson.annotation.JsonProperty("has_issues")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Boolean hasIssues;
         @com.fasterxml.jackson.annotation.JsonProperty("has_downloads")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Boolean hasDownloads;
         @com.fasterxml.jackson.annotation.JsonProperty("has_wiki")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Boolean hasWiki;
         @com.fasterxml.jackson.annotation.JsonProperty("has_pages")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Boolean hasPages;
         @com.fasterxml.jackson.annotation.JsonProperty("forks_count")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Long forksCount;
         @com.fasterxml.jackson.annotation.JsonProperty("mirror_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String mirrorUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("open_issues_count")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Long openIssuesCount;
         @com.fasterxml.jackson.annotation.JsonProperty("forks")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Long forks;
         @com.fasterxml.jackson.annotation.JsonProperty("open_issues")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Long openIssues;
         @com.fasterxml.jackson.annotation.JsonProperty("watchers")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Long watchers;
         @com.fasterxml.jackson.annotation.JsonProperty("default_branch")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String defaultBranch;
     }
 
     @lombok.Data
-    public static class StatusEventPayloadRepositoryOwner {
+    public static class RepositoryOwner {
         @com.fasterxml.jackson.annotation.JsonProperty("login")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String login;
         @com.fasterxml.jackson.annotation.JsonProperty("id")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Long id;
         @com.fasterxml.jackson.annotation.JsonProperty("avatar_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String avatarUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("gravatar_id")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String gravatarId;
         @com.fasterxml.jackson.annotation.JsonProperty("url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String url;
         @com.fasterxml.jackson.annotation.JsonProperty("html_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String htmlUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("followers_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String followersUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("following_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String followingUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("gists_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String gistsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("starred_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String starredUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("subscriptions_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String subscriptionsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("organizations_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String organizationsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("repos_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String reposUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("events_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String eventsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("received_events_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String receivedEventsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("type")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String type;
         @com.fasterxml.jackson.annotation.JsonProperty("site_admin")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Boolean siteAdmin;
     }
 
     @lombok.Data
-    public static class StatusEventPayloadSender {
+    public static class Sender {
         @com.fasterxml.jackson.annotation.JsonProperty("login")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String login;
         @com.fasterxml.jackson.annotation.JsonProperty("id")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Long id;
         @com.fasterxml.jackson.annotation.JsonProperty("avatar_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String avatarUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("gravatar_id")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String gravatarId;
         @com.fasterxml.jackson.annotation.JsonProperty("url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String url;
         @com.fasterxml.jackson.annotation.JsonProperty("html_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String htmlUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("followers_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String followersUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("following_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String followingUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("gists_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String gistsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("starred_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String starredUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("subscriptions_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String subscriptionsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("organizations_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String organizationsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("repos_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String reposUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("events_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String eventsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("received_events_url")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String receivedEventsUrl;
         @com.fasterxml.jackson.annotation.JsonProperty("type")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private String type;
         @com.fasterxml.jackson.annotation.JsonProperty("site_admin")
-        @com.fasterxml.jackson.annotation.JsonInclude(com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL)
         private Boolean siteAdmin;
     }
 }

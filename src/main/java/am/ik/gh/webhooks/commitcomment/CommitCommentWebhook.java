@@ -1,6 +1,6 @@
 package am.ik.gh.webhooks.commitcomment;
 
-@javax.annotation.Generated(value = "am.ik.gh.webhooks.PayloadGenerator", date = "2015-12-09T03:30:21.95")
+@javax.annotation.Generated(value = "am.ik.gh.webhooks.PayloadGenerator", date = "2015-12-09T11:00:58.763")
 @org.springframework.web.bind.annotation.RestController
 public class CommitCommentWebhook {
     private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(CommitCommentWebhook.class);

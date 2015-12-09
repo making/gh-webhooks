@@ -209,15 +209,16 @@ public class PayloadGenerator {
             Object val = e.getValue();
             String key = e.getKey();
             String type;
+            String prefix = meta.className.endsWith("EventPayload") ? "" : meta.className.replace("EventPayload", "");
             if (val == null) {
                 System.err.println(classMetas.get(0).getClassName() + "." + meta.className + "\t" + key + " is null");
                 type = "java.lang.String";
             } else if (val instanceof Map) {
-                type = meta.className + CaseFormat.LOWER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, key);
+                type = prefix + CaseFormat.LOWER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, key);
                 load(new ClassMeta(type), (Map<String, Object>) val, classMetas);
             } else if (val instanceof List) {
                 List lst = (List) val;
-                String param = meta.className + CaseFormat.LOWER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, key);
+                String param = prefix + CaseFormat.LOWER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, key);
                 if (param.endsWith("s")) {
                     param = param.substring(0, param.length() - 1);
                 }
