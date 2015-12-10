@@ -1,6 +1,5 @@
-package am.ik.gh.webhooks;
+package com.example;
 
-import demo.GhWebhooksApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.web.WebAppConfiguration;
@@ -8,9 +7,9 @@ import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = GhWebhooksApplication.class)
+@SpringApplicationConfiguration(classes = HelloGhwebhooksApplication.class)
 @WebAppConfiguration
-public class GhWebhooksApplicationTests {
+public class HelloGhwebhooksApplicationTests {
 
 	@Test
 	public void contextLoads() {
